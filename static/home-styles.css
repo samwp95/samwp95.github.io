@@ -99,10 +99,13 @@ button:hover {
 
 .blog-section {
     width: 80%;
-    max-width: 400px; /* Max width for the entire blog section */
+    max-width: 480px; /* Max width for the entire blog section */
     margin: 0 auto; /* Center the blog section */
     padding: 20px;
     box-sizing: border-box; /* Include padding in element's total width and height */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between blog post cards */
 }
 
 .blog-post-card {
@@ -111,6 +114,8 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     overflow: hidden; /* Ensure image corners are rounded */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: fit-content; /* Only take up space needed for content */
+    align-self: center; /* Center each card within the blog section */
 }
 
 .blog-post-card:hover {
@@ -143,7 +148,7 @@ button:hover {
 }
 
 .post-title {
-    font-size: 1.8em; /* Larger, more prominent title */
+    font-size: 1.5em; /* Larger, more prominent title */
     font-weight: 700; /* Bold font for the title */
     color: #ffffff; /* Your accent color, e.g., bright cyan/teal */
     margin-top: 0;
