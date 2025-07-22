@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS Quant Media</title>
+<link rel="stylesheet" href="../static/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <a href="index.html">
+        <img class="qm-logo" src="../static/qsoc-logo.png" alt="Quant Media Logo">
+      </a>
+      <a class="title" href="index.html">
+        <h1>QUANT MEDIA</h1>
+      </a>
+      <div class="nav-buttons">
+        <a class="nav-link" href="index.html">
+          <button>HOME</button>
+        </a>
+        <a class="nav-link" href="https://www.instagram.com/utsquantsoc/">
+          <button class="insta-button">
+            UTS QUANT SOCIETY
+            <img src="../static/insta-logo.png" alt="Instagram Logo" style="width: 15px; height: 15px;">
+          </button>
+        </a>
+        <button>ABOUT US</button>
+        <button>CONTACT US</button>
+      </div>
+    </div>
+  </div>
+  <hr style="position: relative; top: 80px;">
+  <content>
+    <h1>What the hellys an option</h1>
+<p>For those who aren't familiar with an options contracts, these are financial instruments often used to protect against risk or make speculative investments.</p>
+<p>Imagine a concert coming up, you haven't received your timetable yet and don't know if you will be able to attend. What if you could pay 10% of the original ticket price now, obtain the <strong>option</strong> to purchase the ticket later (at full price) if you happen to be free at the same time.</p>
+<p>You, now have the chance to attend the party if it suits you and only risked 10% of the price versus 100%.</p>
+<blockquote>
+<p>Options provide buyers, the option but not the obligation to purchase something on a pre-determined price at a later date.</p>
+</blockquote>
+<p>In financial markets the common example of this is, an option to buy stock <strong>XYZ</strong> at the price $<strong>x</strong>, in <strong>n days</strong>. If the underlying asset (XYZ) does not exceed the price of <em>$x</em> then there is no reason to execute the option. </p>
+<blockquote>
+<p>The seller of an option receives an obligation to provide the item the option guarantees, at the pre-determined price if the option is executed.</p>
+</blockquote>
+<p>With this information we can see, the buyer pays for an option while the seller receives money for an obligation. This is similar to insurance - you pay your car insurer a sum of money, so in the event of an accident they are obliged to compensate you a pre-determined amount.</p>
+<h2>Leverage Through Options</h2>
+<blockquote>
+<p>Not sure about this section.</p>
+</blockquote>
+<p>You may have seen memes of degenerates on wallstreetbets obliterating their parents retirement funds through risky options plays.</p>
+<p>These plays are comparable to purchasing lightning insurance, you will receive $1 million dollars if you are struck by lightning.</p>
+<p>It's incredibly unlikely that you're going to profit from this, however no matter how small the probability is something has a chance to happen, given enough time it will happen.</p>
+<p>This is the basis for the <a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem">infinite monkey theorem.</a> (<a href="https://www.uts.edu.au/news/2024/10/its-not-be-universe-too-short-shakespeare-typing-monkeys">UTS Article Challenging the theory</a>)</p>
+<h1>Why It Matters</h1>
+<p>Options help investors to navigate the markets by opening the door to many different combinations and possibilities of hedging risk and amplifying returns.</p>
+<h2>Option Payoff Structures</h2>
+<p>In the simplest example, you buy a call option which has a strike <em>(purchase)</em> price of $6. If the price exceeds $6 then you will profit by executing the option and selling the shares directly back to the market.
+<img alt="alt text" src="image-1.png" /></p>
+<p>So in theory, when the stock price crosses anywhere above the strike price the buyer profits. In reality we need to account for the amount paid for the option, brokerage and trading costs.</p>
+<p>For the seller the opposite is true, as long as the stock price stays below $6 they will not be obliged to provide the stock at a discount to what the market is currently trading for.
+<img alt="alt text" src="image-2.png" /></p>
+<h2>Payoff Caps</h2>
+<p>In the above scenario, it's theoretically possible for the stock price to continue to rise until infinity.</p>
+<p>So the buyer purchases an option for which their losses are capped at the purchase price to infinity. The seller recieves the opposite payoff structure. 
+$$
+\begin{aligned}
+&amp;\text{Buyer Profit} = -p \geq x \geq \infty \
+&amp;\text{Seller Profit} =  -\infty \geq x \geq p 
+\end{aligned}
+$$</p>
+<ul>
+<li>Where $p$ is the purchase price.</li>
+<li>$x$ is the potential profit.</li>
+</ul>
+<p>Imagine the reverse is true for when you purchase a <strong>put</strong> option.</p>
+<p>| Type    | Outcome |
+| --- | --- |
+| Call Option    | Provides the buyer an option to <strong>buy</strong> a stock.    |
+| Put Option    | Provides the buyer an option to <strong>sell</strong> a stock.    |</p>
+<p>Put options have the reverse payoff structure to call options, if this concept is foreign exploring the idea of <strong>shorting stocks</strong> would assist in understanding how this is profitable.
+<img alt="alt text" src="image-3.png" /></p>
+<h2>How hedging works (The difference between buying and selling options)</h2>
+<ul>
+<li>[ ]  <em>Show pay off charts</em></li>
+</ul>
+<p>Consider a scenario where you own shares in a small start up called google. Currently trading at $12. You purchased these shares at $8 and have made a decent profit of $4 per share.</p>
+<p>If you purchased a <strong>put</strong> option, the opposite of a <strong>call</strong> option which allows you to sell a stock at a pre-determined price. Providing the buyer of the option the chance to sell google shares at $10 which you already own, and purchased at $8.</p>
+<p>If you execute this option, you can sell your own shares at $10 resulting in a profit of $2. This is less than the current market price of $12 which would allow you to profit by $4, so that would not be logical.</p>
+<p>What if the stock price fell to $6? You have lost all of your potential profit.</p>
+<p><strong>The option locks in a minimum price ($10) you can sell the shares for, for a pre-determined period for a cost.</strong> Hedging against downside risk and locking in some profits. The payout chart for this scenario looks like this:</p>
+<p><img alt="alt text" src="image-4.png" /></p>
+<h2>Summary</h2>
+<p>This article explained the basics of options contracts, highlighting how they give investors the right—but not the obligation—to buy or sell assets at predetermined prices. </p>
+<p>Options are powerful tools for managing risk, amplifying returns, and hedging against market movements. By using combinations of call and put options, investors can create complex strategies that profit from both upward and downward price movements, or even from market stability. </p>
+<p>This flexibility enables sophisticated speculative plays that go beyond simple buying or selling, opening up a wide range of opportunities in financial markets.</p>
+  </content>
+</body>
+
+</html>
